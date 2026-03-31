@@ -6,447 +6,235 @@
   <title>La Milpa — Cocina Mexicana</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════════
-       HEADER
-  ═══════════════════════════════════════════ -->
-  <header id="header">
-    <div class="nav-wrap">
-
+  <!-- ░░ HEADER ░░ -->
+  <header id="hdr">
+    <div class="hdr-in">
       <a href="#" class="logo">
-        <span class="logo-name">La Milpa</span>
-        <span class="logo-tagline">Cocina Mexicana</span>
+        <span class="logo-main">La Milpa</span>
+        <span class="logo-tag">Cocina Mexicana · Est. 2012</span>
       </a>
-
-      <nav id="mainNav">
+      <nav class="dnav">
         <a href="#nosotros">Nosotros</a>
         <a href="#menu">Menú</a>
         <a href="#galeria">Galería</a>
         <a href="#opiniones">Opiniones</a>
         <a href="#ubicacion">Ubicación</a>
-        <a href="https://wa.me/5214420000000" class="nav-cta">Reservar</a>
+        <a href="https://wa.me/5214420000000" class="rbtn">Reservar mesa</a>
       </nav>
-
-      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="brg" id="brg" aria-label="Menú">
+        <span></span><span></span><span></span>
       </button>
-
     </div>
   </header>
 
-  <!-- Mobile overlay menu -->
-  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true">
-    <nav class="mobile-nav">
-      <a href="#nosotros" class="mob-link">Nosotros</a>
-      <a href="#menu"     class="mob-link">Menú</a>
-      <a href="#galeria"  class="mob-link">Galería</a>
-      <a href="#opiniones"class="mob-link">Opiniones</a>
-      <a href="#ubicacion"class="mob-link">Ubicación</a>
-      <a href="https://wa.me/5214420000000" class="mob-cta">Reservar mesa</a>
-    </nav>
+  <!-- Mobile menu -->
+  <div class="mmenu" id="mmenu">
+    <a href="#nosotros">Nosotros</a>
+    <a href="#menu">Menú</a>
+    <a href="#galeria">Galería</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="https://wa.me/5214420000000" class="mres">Reservar mesa</a>
   </div>
 
-  <!-- ═══════════════════════════════════════════
-       HERO
-  ═══════════════════════════════════════════ -->
+  <!-- ░░ HERO ░░ -->
   <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="hero-label">Querétaro, México</p>
-      <h1>Sabor auténtico<br>desde <em>el campo</em><br>a tu mesa</h1>
-      <p class="hero-sub">Recetas familiares preparadas con ingredientes frescos del día, en un ambiente que te hace sentir en casa.</p>
-      <div class="hero-btns">
-        <a href="#menu"     class="btn-primary">Ver el menú</a>
-        <a href="#nosotros" class="btn-ghost">Nuestra historia</a>
+    <div class="hbg" id="hbg"></div>
+    <div class="hveil"></div>
+    <div class="hcontent">
+      <p class="hloc" style="--i:0">— Querétaro, México —</p>
+      <h1 class="htitle" style="--i:1">
+        Sabor<br><em>auténtico</em><br>desde el campo
+      </h1>
+      <p class="hsub" style="--i:2">Recetas de familia, ingredientes del día,<br>un lugar donde el tiempo se detiene.</p>
+      <div class="hbtns" style="--i:3">
+        <a href="#menu"     class="bgold">Explorar el menú</a>
+        <a href="#nosotros" class="bline">Nuestra historia</a>
       </div>
     </div>
-    <div class="hero-scroll">
-      <div class="scroll-line"></div>
-      <span class="scroll-txt">Descubrir</span>
-    </div>
+    <div class="hscroll"><div class="hsl"></div></div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-       ESTADÍSTICAS
-  ═══════════════════════════════════════════ -->
-  <div class="stats-bar">
-    <div class="stats-inner">
-      <div class="stat reveal" data-delay="0">
-        <div class="stat-num" data-count="12">0</div>
-        <div class="stat-label">Años de tradición</div>
+  <!-- ░░ STATS ░░ -->
+  <div class="stats">
+    <div class="stats-in">
+      <div class="si" data-r>
+        <b class="sn" data-to="12">0</b>
+        <span>Años de tradición</span>
       </div>
-      <div class="stat reveal" data-delay="1">
-        <div class="stat-num" data-count="40" data-suffix="+">0</div>
-        <div class="stat-label">Platillos en menú</div>
+      <div class="sdiv"></div>
+      <div class="si" data-r data-d="1">
+        <b class="sn" data-to="40" data-s="+">0</b>
+        <span>Platillos en menú</span>
       </div>
-      <div class="stat reveal" data-delay="2">
-        <div class="stat-num" data-count="98" data-suffix="%">0</div>
-        <div class="stat-label">Clientes satisfechos</div>
+      <div class="sdiv"></div>
+      <div class="si" data-r data-d="2">
+        <b class="sn" data-to="98" data-s="%">0</b>
+        <span>Clientes satisfechos</span>
       </div>
-      <div class="stat reveal" data-delay="3">
-        <div class="stat-num" data-count="100" data-suffix="%">0</div>
-        <div class="stat-label">Ingredientes frescos</div>
+      <div class="sdiv"></div>
+      <div class="si" data-r data-d="3">
+        <b class="sn" data-to="100" data-s="%">0</b>
+        <span>Ingredientes frescos</span>
       </div>
     </div>
   </div>
 
-  <!-- ═══════════════════════════════════════════
-       NOSOTROS
-  ═══════════════════════════════════════════ -->
+  <!-- ░░ NOSOTROS ░░ -->
   <section id="nosotros" class="about">
-    <div class="about-inner">
+    <div class="about-photo" data-r data-dir="l">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1000&q=90&auto=format&fit=crop" alt="Interior La Milpa">
+      <div class="about-yr"><span>20</span><span>12</span></div>
+    </div>
+    <div class="about-txt" data-r data-dir="r">
+      <p class="eyebrow">— Nuestra historia</p>
+      <h2>Comida con<br><em>alma</em>, preparada<br>con amor</h2>
+      <div class="hline"></div>
+      <p>La Milpa nació de un sueño familiar: llevar a cada mesa los sabores auténticos que crecieron con nosotros. Desde tortillas hechas a mano hasta salsas molidas en metate, cada detalle habla de nuestra herencia.</p>
+      <p>Utilizamos ingredientes frescos seleccionados diariamente en el mercado local. No hay atajos en nuestra cocina: el tiempo y el cariño son ingredientes tan importantes como el chile o el cilantro.</p>
+      <p>Te recibimos como familia, porque eso es lo que eres cuando cruzas nuestra puerta.</p>
+    </div>
+  </section>
 
-      <div class="about-img-wrap reveal" data-dir="left">
-        <img
-          class="about-img"
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=85&auto=format&fit=crop"
-          alt="Interior del restaurante La Milpa"
-          loading="lazy">
-        <div class="about-badge">
-          <span class="badge-year">2012</span>
-          <span class="badge-txt">Desde</span>
-        </div>
-      </div>
+  <!-- ░░ MENÚ ░░ -->
+  <section id="menu" class="msec">
+    <div class="msec-head" data-r>
+      <p class="eyebrow light">— Lo que preparamos</p>
+      <h2 class="light">Nuestros <em>platillos</em><br>más queridos</h2>
+    </div>
 
-      <div class="about-text reveal" data-dir="right">
-        <p class="eyebrow">Nuestra historia</p>
-        <h2 class="sec-title">Comida con <em>alma</em>,<br>preparada con amor</h2>
-        <div class="divider"><span class="divider-dot"></span></div>
-        <p>La Milpa nació de un sueño familiar: llevar a cada mesa los sabores auténticos que crecieron con nosotros. Desde tortillas hechas a mano hasta salsas molidas en metate, cada detalle habla de nuestra herencia.</p>
-        <p>Utilizamos ingredientes frescos seleccionados diariamente en el mercado local. No hay atajos en nuestra cocina: aquí el tiempo y el cariño son ingredientes tan importantes como el chile o el cilantro.</p>
-        <p>Te recibimos como familia, porque eso es lo que eres cuando cruzas nuestra puerta.</p>
-      </div>
+    <div class="mtabs" data-r data-d="1">
+      <button class="mt active" data-f="todos">Todos</button>
+      <button class="mt" data-f="tacos">Tacos</button>
+      <button class="mt" data-f="antojitos">Antojitos</button>
+      <button class="mt" data-f="para-compartir">Para compartir</button>
+    </div>
+
+    <div class="mgrid" id="mgrid">
+
+      <article class="mc" data-cat="tacos" data-r data-d="0">
+        <div class="mc-photo"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&q=90&auto=format&fit=crop" alt="Tacos al Pastor" loading="lazy"><span class="mc-badge">Popular</span></div>
+        <div class="mc-body"><p class="mc-cat">Tacos</p><h3>Tacos al Pastor</h3><p class="mc-desc">Cerdo marinado en achiote, piña asada, cebolla y cilantro en tortilla de maíz hecha a mano.</p><div class="mc-ft"><span class="mc-price">$65</span></div></div>
+      </article>
+
+      <article class="mc" data-cat="tacos" data-r data-d="1">
+        <div class="mc-photo"><img src="https://images.unsplash.com/photo-1624300629298-e9de39c13be5?w=800&q=90&auto=format&fit=crop" alt="Carne Asada" loading="lazy"><span class="mc-badge">Popular</span></div>
+        <div class="mc-body"><p class="mc-cat">Tacos</p><h3>Carne Asada</h3><p class="mc-desc">Res premium a las brasas, guacamole, salsa molcajeteada y limón en tortilla de maíz.</p><div class="mc-ft"><span class="mc-price">$75</span></div></div>
+      </article>
+
+      <article class="mc" data-cat="antojitos" data-r data-d="2">
+        <div class="mc-photo"><img src="https://images.unsplash.com/photo-1534352956036-cd81e27dd615?w=800&q=90&auto=format&fit=crop" alt="Enchiladas Verdes" loading="lazy"></div>
+        <div class="mc-body"><p class="mc-cat">Antojitos</p><h3>Enchiladas Verdes</h3><p class="mc-desc">Tortillas bañadas en salsa de tomatillo, pollo deshebrado, crema y queso fresco.</p><div class="mc-ft"><span class="mc-price">$85</span></div></div>
+      </article>
+
+      <article class="mc" data-cat="antojitos" data-r data-d="0">
+        <div class="mc-photo"><img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=800&q=90&auto=format&fit=crop" alt="Quesadillas de Comal" loading="lazy"></div>
+        <div class="mc-body"><p class="mc-cat">Antojitos</p><h3>Quesadillas de Comal</h3><p class="mc-desc">Tortilla artesanal con queso Oaxaca derretido. Relleno a elegir: flor de calabaza, hongos o tinga.</p><div class="mc-ft"><span class="mc-price">$50</span></div></div>
+      </article>
+
+      <article class="mc" data-cat="para-compartir" data-r data-d="1">
+        <div class="mc-photo"><img src="https://images.unsplash.com/photo-1553163147-622ab57be1c7?w=800&q=90&auto=format&fit=crop" alt="Guacamole" loading="lazy"><span class="mc-badge vegan">Vegano</span></div>
+        <div class="mc-body"><p class="mc-cat">Para compartir</p><h3>Guacamole Artesanal</h3><p class="mc-desc">Aguacate Hass molido en molcajete con jitomate, chile serrano, cilantro y limón al momento.</p><div class="mc-ft"><span class="mc-price">$55</span></div></div>
+      </article>
+
+      <article class="mc" data-cat="para-compartir" data-r data-d="2">
+        <div class="mc-photo"><img src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=800&q=90&auto=format&fit=crop" alt="Nachos" loading="lazy"></div>
+        <div class="mc-body"><p class="mc-cat">Para compartir</p><h3>Nachos La Milpa</h3><p class="mc-desc">Totopos crujientes con queso fundido, carne, jalapeños, crema, guacamole y pico de gallo.</p><div class="mc-ft"><span class="mc-price">$95</span></div></div>
+      </article>
 
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-       MENÚ
-  ═══════════════════════════════════════════ -->
-  <section id="menu" class="menu">
-    <div class="menu-inner">
-
-      <div class="sec-header reveal">
-        <p class="eyebrow center">Lo que preparamos</p>
-        <h2 class="sec-title center">Nuestros <em>platillos</em> más queridos</h2>
-      </div>
-
-      <div class="menu-tabs reveal" data-delay="1">
-        <button class="tab active" data-filter="todos">Todos</button>
-        <button class="tab" data-filter="tacos">Tacos</button>
-        <button class="tab" data-filter="antojitos">Antojitos</button>
-        <button class="tab" data-filter="para-compartir">Para compartir</button>
-      </div>
-
-      <div class="menu-grid">
-
-        <!-- ── TACOS ── -->
-        <article class="dish-card reveal" data-cat="tacos" data-delay="0">
-          <div class="dish-img-wrap">
-            <img
-              class="dish-img"
-              src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=700&q=85&auto=format&fit=crop"
-              alt="Tacos al Pastor"
-              loading="lazy">
-            <span class="dish-badge popular">Popular</span>
-          </div>
-          <div class="dish-info">
-            <p class="dish-cat">Tacos</p>
-            <h3 class="dish-name">Tacos al Pastor</h3>
-            <p class="dish-desc">Carne de cerdo marinada en achiote y especias, en tortilla de maíz con piña asada, cebolla y cilantro.</p>
-            <div class="dish-footer">
-              <span class="dish-price">$65</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="dish-card reveal" data-cat="tacos" data-delay="1">
-          <div class="dish-img-wrap">
-            <img
-              class="dish-img"
-              src="https://images.unsplash.com/photo-1624300629298-e9de39c13be5?w=700&q=85&auto=format&fit=crop"
-              alt="Tacos de Carne Asada"
-              loading="lazy">
-            <span class="dish-badge popular">Popular</span>
-          </div>
-          <div class="dish-info">
-            <p class="dish-cat">Tacos</p>
-            <h3 class="dish-name">Tacos de Carne Asada</h3>
-            <p class="dish-desc">Res premium a las brasas en tortilla de maíz, con guacamole, salsa molcajeteada y limón fresco.</p>
-            <div class="dish-footer">
-              <span class="dish-price">$75</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ── ANTOJITOS ── -->
-        <article class="dish-card reveal" data-cat="antojitos" data-delay="2">
-          <div class="dish-img-wrap">
-            <img
-              class="dish-img"
-              src="https://images.unsplash.com/photo-1534352956036-cd81e27dd615?w=700&q=85&auto=format&fit=crop"
-              alt="Enchiladas Verdes"
-              loading="lazy">
-          </div>
-          <div class="dish-info">
-            <p class="dish-cat">Antojitos</p>
-            <h3 class="dish-name">Enchiladas Verdes</h3>
-            <p class="dish-desc">Tortillas bañadas en salsa de tomatillo con pollo deshebrado, crema, queso fresco y cebolla morada.</p>
-            <div class="dish-footer">
-              <span class="dish-price">$85</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="dish-card reveal" data-cat="antojitos" data-delay="0">
-          <div class="dish-img-wrap">
-            <img
-              class="dish-img"
-              src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=700&q=85&auto=format&fit=crop"
-              alt="Quesadillas de Comal"
-              loading="lazy">
-          </div>
-          <div class="dish-info">
-            <p class="dish-cat">Antojitos</p>
-            <h3 class="dish-name">Quesadillas de Comal</h3>
-            <p class="dish-desc">Tortilla artesanal de maíz con queso Oaxaca derretido. Relleno a elegir: flor de calabaza, hongos o tinga.</p>
-            <div class="dish-footer">
-              <span class="dish-price">$50</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ── PARA COMPARTIR ── -->
-        <article class="dish-card reveal" data-cat="para-compartir" data-delay="1">
-          <div class="dish-img-wrap">
-            <img
-              class="dish-img"
-              src="https://images.unsplash.com/photo-1553163147-622ab57be1c7?w=700&q=85&auto=format&fit=crop"
-              alt="Guacamole Artesanal"
-              loading="lazy">
-            <span class="dish-badge vegano">Vegano</span>
-          </div>
-          <div class="dish-info">
-            <p class="dish-cat">Para compartir</p>
-            <h3 class="dish-name">Guacamole Artesanal</h3>
-            <p class="dish-desc">Aguacate Hass molido en molcajete con jitomate, cebolla, chile serrano, cilantro y limón al momento.</p>
-            <div class="dish-footer">
-              <span class="dish-price">$55</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="dish-card reveal" data-cat="para-compartir" data-delay="2">
-          <div class="dish-img-wrap">
-            <img
-              class="dish-img"
-              src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=700&q=85&auto=format&fit=crop"
-              alt="Nachos La Milpa"
-              loading="lazy">
-          </div>
-          <div class="dish-info">
-            <p class="dish-cat">Para compartir</p>
-            <h3 class="dish-name">Nachos La Milpa</h3>
-            <p class="dish-desc">Totopos crujientes con queso fundido, carne, jalapeños, crema, guacamole y pico de gallo.</p>
-            <div class="dish-footer">
-              <span class="dish-price">$95</span>
-            </div>
-          </div>
-        </article>
-
-      </div><!-- /menu-grid -->
-    </div><!-- /menu-inner -->
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       GALERÍA
-  ═══════════════════════════════════════════ -->
-  <section id="galeria" class="gallery">
-    <div class="gallery-inner">
-
-      <div class="gallery-header">
-        <div class="reveal" data-dir="left">
-          <p class="eyebrow">Momentos en La Milpa</p>
-          <h2 class="gallery-title">Una mirada<br>a nuestra cocina</h2>
-        </div>
-        <p class="gallery-sub reveal" data-dir="right">
-          Cada platillo es preparado con dedicación y amor, todos los días.
-        </p>
-      </div>
-
-      <div class="gallery-grid">
-        <!-- foto 1: grande horizontal -->
-        <div class="g-item reveal" data-delay="0">
-          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1000&q=85&auto=format&fit=crop"
-               alt="Mesa con platillos mexicanos" loading="lazy">
-        </div>
-        <!-- foto 2 -->
-        <div class="g-item reveal" data-delay="1">
-          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=85&auto=format&fit=crop"
-               alt="Tacos al pastor" loading="lazy">
-        </div>
-        <!-- foto 3 -->
-        <div class="g-item reveal" data-delay="2">
-          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=85&auto=format&fit=crop"
-               alt="Interior del restaurante" loading="lazy">
-        </div>
-        <!-- foto 4 -->
-        <div class="g-item reveal" data-delay="0">
-          <img src="https://images.unsplash.com/photo-1553163147-622ab57be1c7?w=700&q=85&auto=format&fit=crop"
-               alt="Guacamole fresco" loading="lazy">
-        </div>
-        <!-- foto 5 -->
-        <div class="g-item reveal" data-delay="1">
-          <img src="https://images.unsplash.com/photo-1624300629298-e9de39c13be5?w=700&q=85&auto=format&fit=crop"
-               alt="Tacos de carne asada" loading="lazy">
-        </div>
-        <!-- foto 6 -->
-        <div class="g-item reveal" data-delay="2">
-          <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=700&q=85&auto=format&fit=crop"
-               alt="Quesadillas de comal" loading="lazy">
-        </div>
-      </div>
-
+  <!-- ░░ GALERÍA ░░ -->
+  <section id="galeria" class="gal">
+    <div class="gal-head" data-r>
+      <p class="eyebrow">— Momentos en La Milpa</p>
+      <h2>Una mirada a<br>nuestra <em>cocina</em></h2>
+    </div>
+    <div class="ggrid">
+      <div class="gi g1" data-r data-d="0"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1100&q=90&auto=format&fit=crop" alt="Mesa" loading="lazy"><div class="gcap">La mesa lista</div></div>
+      <div class="gi g2" data-r data-d="1"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=700&q=90&auto=format&fit=crop" alt="Tacos" loading="lazy"><div class="gcap">Tacos al pastor</div></div>
+      <div class="gi g3" data-r data-d="2"><img src="https://images.unsplash.com/photo-1553163147-622ab57be1c7?w=700&q=90&auto=format&fit=crop" alt="Guacamole" loading="lazy"><div class="gcap">Guacamole</div></div>
+      <div class="gi g4" data-r data-d="1"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=90&auto=format&fit=crop" alt="Interior" loading="lazy"><div class="gcap">Nuestro espacio</div></div>
+      <div class="gi g5" data-r data-d="2"><img src="https://images.unsplash.com/photo-1624300629298-e9de39c13be5?w=700&q=90&auto=format&fit=crop" alt="Carne asada" loading="lazy"><div class="gcap">Carne asada</div></div>
+      <div class="gi g6" data-r data-d="3"><img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=700&q=90&auto=format&fit=crop" alt="Quesadillas" loading="lazy"><div class="gcap">Quesadillas</div></div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-       OPINIONES
-  ═══════════════════════════════════════════ -->
-  <section id="opiniones" class="reviews">
-    <div class="reviews-inner">
-
-      <div class="sec-header reveal">
-        <p class="eyebrow center light">Lo que dicen nuestros clientes</p>
-        <h2 class="sec-title center light">Opiniones que nos<br>llenan de <em>orgullo</em></h2>
+  <!-- ░░ OPINIONES ░░ -->
+  <section id="opiniones" class="revs">
+    <div class="revs-head" data-r>
+      <p class="eyebrow light">— Lo que dicen</p>
+      <h2 class="light">Opiniones que nos<br>llenan de <em>orgullo</em></h2>
+    </div>
+    <div class="rgrid">
+      <div class="rc" data-r data-d="0">
+        <div class="rstars">★★★★★</div>
+        <blockquote>"Los mejores tacos al pastor que he probado en Querétaro. La tortilla hecha a mano hace toda la diferencia."</blockquote>
+        <div class="rau"><div class="rav">M</div><div><b>Mariana G.</b><span>Google · hace 2 semanas</span></div></div>
       </div>
-
-      <div class="reviews-grid">
-
-        <div class="review-card reveal" data-delay="0">
-          <div class="review-stars">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span>
-            <span class="star">★</span><span class="star">★</span>
-          </div>
-          <p class="review-text">"Los mejores tacos al pastor que he probado en Querétaro. La tortilla hecha a mano hace toda la diferencia."</p>
-          <div class="review-author">
-            <div class="review-avatar">M</div>
-            <div>
-              <div class="review-name">Mariana G.</div>
-              <div class="review-platform">Google · hace 2 semanas</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card reveal" data-delay="1">
-          <div class="review-stars">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span>
-            <span class="star">★</span><span class="star">★</span>
-          </div>
-          <p class="review-text">"El guacamole en molcajete es una experiencia aparte. Servicio cálido y ambiente muy agradable. ¡Regresaré pronto!"</p>
-          <div class="review-author">
-            <div class="review-avatar">R</div>
-            <div>
-              <div class="review-name">Roberto F.</div>
-              <div class="review-platform">Google · hace 1 mes</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card reveal" data-delay="2">
-          <div class="review-stars">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span>
-            <span class="star">★</span><span class="star">★</span>
-          </div>
-          <p class="review-text">"Llevé a mi familia de visita y fue un acierto total. Comida generosa, auténtica y a muy buen precio."</p>
-          <div class="review-author">
-            <div class="review-avatar">L</div>
-            <div>
-              <div class="review-name">Lupita M.</div>
-              <div class="review-platform">Google · hace 3 semanas</div>
-            </div>
-          </div>
-        </div>
-
+      <div class="rc" data-r data-d="1">
+        <div class="rstars">★★★★★</div>
+        <blockquote>"El guacamole en molcajete es una experiencia aparte. Servicio cálido y ambiente muy agradable."</blockquote>
+        <div class="rau"><div class="rav">R</div><div><b>Roberto F.</b><span>Google · hace 1 mes</span></div></div>
+      </div>
+      <div class="rc" data-r data-d="2">
+        <div class="rstars">★★★★★</div>
+        <blockquote>"Llevé a mi familia de visita y fue un acierto total. Comida generosa, auténtica y a muy buen precio."</blockquote>
+        <div class="rau"><div class="rav">L</div><div><b>Lupita M.</b><span>Google · hace 3 semanas</span></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-       INFO BAND
-  ═══════════════════════════════════════════ -->
-  <div class="info-band">
-    <div class="info-inner">
-
-      <div class="info-block reveal" data-delay="0">
-        <div class="info-icon" aria-hidden="true">🕐</div>
-        <p class="info-label">Horario</p>
-        <p class="info-title">Abierto todos los días</p>
-        <p class="info-detail">Lun – Vie: 12:00 – 22:00<br>Sáb – Dom: 10:00 – 23:00</p>
+  <!-- ░░ INFO + MAPA ░░ -->
+  <section id="ubicacion" class="imap">
+    <div class="imap-info">
+      <p class="eyebrow">— Encuéntranos</p>
+      <h2>Visítanos<br>en Querétaro</h2>
+      <div class="iitems">
+        <div class="ii" data-r data-d="0">
+          <div class="ii-ico">◷</div>
+          <div class="ii-txt"><b>Horario</b><span>Lun – Vie: 12:00 – 22:00</span><span>Sáb – Dom: 10:00 – 23:00</span></div>
+        </div>
+        <div class="ii" data-r data-d="1">
+          <div class="ii-ico">◉</div>
+          <div class="ii-txt"><b>Dirección</b><span>Av. Principal 123, Centro Histórico</span><span>Querétaro, Qro. C.P. 76000</span></div>
+        </div>
+        <div class="ii" data-r data-d="2">
+          <div class="ii-ico">◎</div>
+          <div class="ii-txt"><b>Contacto</b><span>+52 442 000 0000</span><span>lamilpa@correo.com</span></div>
+        </div>
       </div>
-
-      <div class="info-block reveal" data-delay="1">
-        <div class="info-icon" aria-hidden="true">📍</div>
-        <p class="info-label">Dónde encontrarnos</p>
-        <p class="info-title">Av. Principal 123</p>
-        <p class="info-detail">Centro Histórico<br>Querétaro, Qro. C.P. 76000</p>
-      </div>
-
-      <div class="info-block reveal" data-delay="2">
-        <div class="info-icon" aria-hidden="true">📞</div>
-        <p class="info-label">Contacto</p>
-        <p class="info-title">¿Tienes dudas?</p>
-        <p class="info-detail">WhatsApp: +52 442 000 0000<br>lamilpa@correo.com</p>
-      </div>
-
+      <a href="https://wa.me/5214420000000" class="bgold" style="margin-top:44px">Reservar por WhatsApp</a>
     </div>
-  </div>
-
-  <!-- ═══════════════════════════════════════════
-       MAPA
-  ═══════════════════════════════════════════ -->
-  <section id="ubicacion" class="map-section">
-    <div class="map-inner reveal">
-      <p class="eyebrow center">Visítanos</p>
-      <h2 class="sec-title center map-title">¿Cómo llegar?</h2>
-      <p class="map-sub">Estamos en el corazón de Querétaro, fácil de encontrar.</p>
-      <div class="map-wrap">
-        <iframe
-          src="https://www.google.com/maps?q=queretaro+centro+historico&output=embed"
-          allowfullscreen
-          loading="lazy"
-          title="Ubicación La Milpa">
-        </iframe>
-      </div>
+    <div class="imap-map" data-r data-dir="r">
+      <iframe src="https://www.google.com/maps?q=queretaro+centro+historico&output=embed" allowfullscreen loading="lazy" title="Ubicación"></iframe>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-       CTA BAND
-  ═══════════════════════════════════════════ -->
-  <section class="cta-band">
-    <div class="cta-inner reveal">
-      <h2>¿Listo para probar<br>la comida <em>de verdad</em>?</h2>
-      <p>Reserva tu mesa o haz tu pedido directo desde WhatsApp.</p>
-      <a href="https://wa.me/5214420000000" class="btn-primary btn-lg">Pedir por WhatsApp</a>
+  <!-- ░░ CTA FINAL ░░ -->
+  <section class="cta">
+    <div class="cta-bg"></div>
+    <div class="cta-veil"></div>
+    <div class="cta-in" data-r>
+      <p class="eyebrow light">— Te esperamos</p>
+      <h2 class="light">¿Listo para probar<br>la comida <em>de verdad</em>?</h2>
+      <p class="cta-sub">Reserva tu mesa o haz tu pedido directo desde WhatsApp.</p>
+      <a href="https://wa.me/5214420000000" class="bgold">Pedir por WhatsApp</a>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════ -->
+  <!-- ░░ FOOTER ░░ -->
   <footer>
-    <div class="footer-inner">
-      <span class="footer-logo">La Milpa</span>
-      <span class="footer-copy">© 2026 La Milpa — Cocina Mexicana. Todos los derechos reservados.</span>
-      <nav class="footer-links">
+    <div class="ft">
+      <span class="ft-logo">La Milpa</span>
+      <span class="ft-copy">© 2026 La Milpa — Cocina Mexicana. Todos los derechos reservados.</span>
+      <nav class="ft-nav">
         <a href="#nosotros">Nosotros</a>
         <a href="#menu">Menú</a>
         <a href="#ubicacion">Ubicación</a>
@@ -454,110 +242,75 @@
     </div>
   </footer>
 
-  <!-- ═══════════════════════════════════════════
-       WHATSAPP FLOTANTE
-  ═══════════════════════════════════════════ -->
-  <a href="https://wa.me/5214420000000" class="float-wa" aria-label="Pedir por WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-    <span class="wa-label">Pedir por WhatsApp</span>
+  <!-- ░░ FAB WhatsApp ░░ -->
+  <a href="https://wa.me/5214420000000" class="fab" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>WhatsApp</span>
   </a>
 
-  <!-- ═══════════════════════════════════════════
-       JAVASCRIPT
-  ═══════════════════════════════════════════ -->
   <script>
-    /* ── 1. HEADER: aparece al scrollear ── */
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 50);
-    }, { passive: true });
+  /* header */
+  const hdr = document.getElementById('hdr');
+  addEventListener('scroll', () => hdr.classList.toggle('solid', scrollY > 55), {passive:true});
 
-    /* ── 2. PARALLAX hero ── */
-    const heroBg = document.querySelector('.hero-bg');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY < window.innerHeight * 1.2) {
-        heroBg.style.transform = `translateY(${window.scrollY * 0.3}px)`;
-      }
-    }, { passive: true });
+  /* parallax */
+  const hbg = document.getElementById('hbg');
+  addEventListener('scroll', () => {
+    if (scrollY < innerHeight * 1.4) hbg.style.transform = `translateY(${scrollY * 0.3}px)`;
+  }, {passive:true});
 
-    /* ── 3. HAMBURGER + overlay ── */
-    const hamburger = document.getElementById('hamburger');
-    const overlay   = document.getElementById('mobileOverlay');
-    let menuOpen = false;
+  /* burger */
+  const brg = document.getElementById('brg');
+  const mm  = document.getElementById('mmenu');
+  brg.addEventListener('click', () => {
+    const o = mm.classList.toggle('open');
+    brg.classList.toggle('open', o);
+    document.body.style.overflow = o ? 'hidden' : '';
+  });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mm.classList.remove('open'); brg.classList.remove('open'); document.body.style.overflow = '';
+  }));
 
-    function toggleMenu(open) {
-      menuOpen = open;
-      hamburger.classList.toggle('open', open);
-      hamburger.setAttribute('aria-expanded', open);
-      overlay.classList.toggle('open', open);
-      overlay.setAttribute('aria-hidden', !open);
-      document.body.style.overflow = open ? 'hidden' : '';
-    }
-
-    hamburger.addEventListener('click', () => toggleMenu(!menuOpen));
-    overlay.querySelectorAll('a').forEach(a =>
-      a.addEventListener('click', () => toggleMenu(false))
-    );
-
-    /* ── 4. REVEAL on scroll ── */
-    const DELAYS = [0, 120, 240, 360];
-    const revealEls = document.querySelectorAll('.reveal');
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        const el = entry.target;
-        const d  = parseInt(el.dataset.delay || 0);
-        setTimeout(() => el.classList.add('visible'), DELAYS[d] || 0);
-        revealObserver.unobserve(el);
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -48px 0px' });
-    revealEls.forEach(el => revealObserver.observe(el));
-
-    /* ── 5. CONTADORES animados ── */
-    const countEls = document.querySelectorAll('.stat-num[data-count]');
-    const countObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        const el     = entry.target;
-        const target = parseInt(el.dataset.count);
-        const suffix = el.dataset.suffix || '';
-        const dur    = 1500;
-        const start  = performance.now();
-        function tick(now) {
-          const p = Math.min((now - start) / dur, 1);
-          const ease = 1 - Math.pow(1 - p, 3);
-          el.textContent = Math.round(ease * target) + suffix;
-          if (p < 1) requestAnimationFrame(tick);
-        }
-        requestAnimationFrame(tick);
-        countObserver.unobserve(el);
-      });
-    }, { threshold: 0.5 });
-    countEls.forEach(el => countObserver.observe(el));
-
-    /* ── 6. FILTRO de menú ── */
-    const tabs  = document.querySelectorAll('.tab');
-    const cards = document.querySelectorAll('.dish-card');
-
-    tabs.forEach(tab => {
-      tab.addEventListener('click', function () {
-        tabs.forEach(t => t.classList.remove('active'));
-        this.classList.add('active');
-        const filter = this.dataset.filter;
-        cards.forEach(card => {
-          const show = filter === 'todos' || card.dataset.cat === filter;
-          card.classList.toggle('hidden', !show);
-          if (show) {
-            card.style.animation = 'none';
-            void card.offsetWidth; // reflow
-            card.style.animation = '';
-          }
-        });
-      });
+  /* reveal on scroll */
+  const D = [0, 130, 260, 390];
+  const rio = new IntersectionObserver((es, ob) => {
+    es.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      setTimeout(() => el.classList.add('in'), D[+el.dataset.d || 0]);
+      ob.unobserve(el);
     });
-  </script>
+  }, {threshold: 0.08, rootMargin: '0px 0px -40px 0px'});
+  document.querySelectorAll('[data-r]').forEach(el => rio.observe(el));
 
+  /* counters */
+  const cio = new IntersectionObserver((es, ob) => {
+    es.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target, to = +el.dataset.to, suf = el.dataset.s || '';
+      const t0 = performance.now();
+      (function run(t) {
+        const p = Math.min((t - t0) / 1400, 1), v = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(v * to) + suf;
+        if (p < 1) requestAnimationFrame(run);
+      })(t0);
+      ob.unobserve(el);
+    });
+  }, {threshold: 0.6});
+  document.querySelectorAll('.sn[data-to]').forEach(el => cio.observe(el));
+
+  /* menu filter */
+  const tabs = document.querySelectorAll('.mt');
+  const cards = document.querySelectorAll('.mc');
+  tabs.forEach(t => t.addEventListener('click', function () {
+    tabs.forEach(x => x.classList.remove('active'));
+    this.classList.add('active');
+    const f = this.dataset.f;
+    cards.forEach(c => {
+      const show = f === 'todos' || c.dataset.cat === f;
+      c.style.display = show ? '' : 'none';
+    });
+  }));
+  </script>
 </body>
 </html>
