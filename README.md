@@ -4,7 +4,7 @@ Sitio web diseñado para presentar una experiencia visual y atractiva de la gast
 
 - Demo en vivo
 
-👉 https://damian7777777777.github.io/Sabor-Mexicano/
+👉 https://damian-aguilera.github.io/Sabor-Mexicano/
 
 📸 Vista previa
 <img width="1894" height="898" alt="image" src="https://github.com/user-attachments/assets/3f94ccef-5c50-4eab-baf2-f2b686301c6e" />
